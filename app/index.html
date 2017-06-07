@@ -67,11 +67,7 @@
       $('#m').val('');
     });
     socket.on('chat message', function(msg){
-      // var notification = new Notification("服务端推送信息", {
-      //   body: msg,
-      //   icon: 'http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg'
-      // });
       $('#messages').append($('<li>').text(msg));
-    });    
+    });
 </script>
 </html>
